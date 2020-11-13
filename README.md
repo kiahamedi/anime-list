@@ -21,6 +21,8 @@ Python script to find the best anime from the anime world - view trailer and cov
 
 ## Manual Installation (for any linux)
 First install deps:</br>
+`install feh`</br>
+`install mpv`</br>
 `install python3`</br>
 `install python3-bs4`</br>
 `install python3-requests`</br>
