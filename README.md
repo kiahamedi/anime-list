@@ -29,10 +29,10 @@ First install deps:</br>
 `install python3-html5lib`</br>
 </br>
 Install with:</br>
-`cd /tmp/ && git clone https://github.com/kiahamedi/anime-list && cd anime-list/ && sudo cp anime-list.py /usr/bin/anime-lis`
+`cd /tmp/ && git clone https://github.com/kiahamedi/anime-list && cd anime-list/ && sudo cp anime-list.py /usr/bin/anime-list`
 
 ## Manual Uninstallation
-`sudo rm /usr/bin/anime-lis`
+`sudo rm /usr/bin/anime-list`
 
 
 ## Are you a developer?
