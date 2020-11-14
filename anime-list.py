@@ -66,18 +66,26 @@ def main():
     print('\033[H\033[J', end='')
     # show asci name
     script_info()
-    user_page = int(input("Enter page: "))
+    user_page = input("Enter page: ")
+    while not user_page.isdigit():
+        user_page = input("Enter page: ")
+    else:
+        user_page = int(user_page)    
     print('\033[H\033[J', end='')
     print("================ Page %s ================" % (user_page))
     anime = []
     url = []
-    anime, url = get_page(user_page)
+    anime, url = get_page(user_page-1)
     cnt = 1
     for anim in anime:
         print(cnt, anim)
         cnt += 1
     print("================ Selecte Anime ================")
-    selected_anime = int(input("Number of anime: "))
+    selected_anime = input("Number of anime: ")
+    while not selected_anime.isdigit():
+        selected_anime = input("Number of anime: ")
+    else:
+        selected_anime = int(selected_anime)
     print('\033[H\033[J', end='')
     print("================ %s Details ================" % (anime[selected_anime-1]))
     user_anime_title = anime[selected_anime-1]
@@ -96,7 +104,12 @@ while True:
     print("[2] : view trailer")
     print("[3] : back to home")
     print("[4] : exit")
-    selected_control = int(input("Select control: "))
+    selected_control = input("Select control: ")
+    while not selected_control.isdigit():
+        selected_control = input("Select control: ")
+    else:
+        selected_control = int(selected_control)
+
     if selected_control == 1:
         system("feh %s" % (user_anime_img))
     elif selected_control == 2:
